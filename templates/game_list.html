@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for game in games %}
+    <h2>{{ game.name }}</h2>
+      <p>{{ game.description }}</p>
+      <p>Released: {{ game.year }}</p>
+  {% endfor %}
+{% endblock content %}
